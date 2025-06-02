@@ -2,5 +2,11 @@
 
 @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJGQVRFQyBBUEkiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NTk2NDY4NX0.7agTCYiPoNOG0FC0BYtvjjPY0wQzawMp0emZ6d7TRoM
 
-GET {{url}}/protected
+POST {{url}}/usuarios
 Authorization:  Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nomeDeUsuario" : "Teste",
+    "senha" : "testando"
+}
